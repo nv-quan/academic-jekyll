@@ -103,8 +103,16 @@ span.highlight {
 
 #portrait {
   border-radius: 50%;
-  width: 100%;
-  max-width: 100%
+  width: 60%;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+#portrait-name {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
 }
 
 .project-thumbnail-parent {
@@ -177,10 +185,31 @@ body {
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-//@import "highlights";
-//@import "svg-icons";
+@import "highlights";
+@import "svg-icons";
 
 .code {
   // @extend .text-monospace;
   background-color: #f8f8f8;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-panel {
+  width: 30%;
+  padding: 20px;
+}
+
+.right-content {
+  width: 70%;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .left-panel, .right-content {
+    width: 100%;
+  }
 }

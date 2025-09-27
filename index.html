@@ -2,32 +2,31 @@
 layout: default
 ---
 
-<div class="row flex-column-reverse flex-md-row py-2">
-    <div class="col-md-8" id="bio">
-        <h1>John Doe</h1>
-        <p class="text-justify">
-            A minimalistic academic-style Jekyll webpage template available <a href="https://github.com/vsimkus/academic-jekyll">here</a>.
-        </p>
-        <p class="text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum, tortor sed consequat fringilla, odio eros aliquam odio, sed egestas felis augue ac ipsum. Praesent purus risus, iaculis quis vehicula sit amet, sagittis et tellus. 
-        </p>
-        <p class="text-justify">
-            Vestibulum fringilla, est a ullamcorper semper, risus justo interdum lacus, ut auctor tortor risus id mauris. Cras placerat ultrices faucibus. Nullam et iaculis elit. Proin vehicula erat at cursus euismod.
-        </p>
-        <p class="text-justify">
-            Cras nec sem aliquam, pellentesque enim suscipit, fringilla augue. Sed et interdum nisl, sed facilisis sem. Morbi rutrum sapien a vehicula molestie. Sed feugiat tempor ligula, fringilla finibus dui pharetra id. Donec molestie aliquet diam, et tincidunt urna feugiat nec. Proin scelerisque quam at ante rutrum lacinia. Quisque ac pretium est.
-        </p>
+<div class="main-container">
+    <div class="left-panel">
+        <img alt="profile photo" id="portrait" src="images/quan.jpeg">
+        <div id="portrait-name">Quan Nguyen</div>
         <p style="text-align:center">
-            <a target="_blank" href="https://mailhide.io/">Email</a> &nbsp;/&nbsp;
-            <a href="https://github.com/">GitHub</a> &nbsp;/&nbsp;
-            <a href="https://twitter.com/">Twitter</a> &nbsp;/&nbsp;
-            <a href="https://scholar.google.com/citations?user=">Google Scholar</a> &nbsp;/&nbsp;
-            <a href="https://www.linkedin.com/in/">LinkedIn </a>
+            <a target="_blank" href="https://mailhide.io/"><span class="svg-icon email"></span></a> &nbsp;/&nbsp;
+            <a href="https://github.com/nv-quan"><span class="svg-icon github"></span></a> &nbsp;/&nbsp;
+            <a href="https://www.linkedin.com/in/nv-quan"><span class="svg-icon linkedin"></span></a>
         </p>
     </div>
-    <div class="col-md-4" style="z-index:4;">
-        <img alt="profile photo" id="portrait" src="images/portrait.jpg">
+    <div class="right-content">
+        <div id="bio">
+            <h1>About me</h1>
+            <p class="text-justify">
+            I am a research engineer on the <a href="https://ai.neuromeka.com/">Neuromeka AI team</a>, where I work on robotic manipulation using learning-based methods under the mentorship of <a href="https://scholar.google.com/citations?user=6Htb7swAAAAJ&hl=en">Dr. Joonho Lee</a>. Before that, I received my B.Sc. in Computer Science from KAIST.
+            </p>
+
+            <p class="text-justify">
+            My research interests center on robot learning and dexterous manipulation.
+            </p>
+
+            <p class="text-justify">
+            I am currently applying to Master’s and Ph.D. programs in the 2026 admissions cycle.
+            </p>
+        </div>
+        {% include publications.html %}
     </div>
 </div>
-
-{% include publications.html %}
